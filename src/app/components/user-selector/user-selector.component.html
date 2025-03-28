@@ -1,0 +1,5 @@
+<select [(ngModel)]="selectedUserId" (change)="onUserChange()">
+  <option *ngFor="let user of users" [value]="user.id">
+    {{ user.name }}
+  </option>
+</select>

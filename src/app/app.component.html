@@ -1,0 +1,8 @@
+<div class="container">
+  <h2 class="text-center">Twitter Clone</h2>
+
+  <app-user-selector
+    (userSelected)="onUserSelected($event)"
+  ></app-user-selector>
+  <app-post-list [userId]="selectedUserId"></app-post-list>
+</div>
